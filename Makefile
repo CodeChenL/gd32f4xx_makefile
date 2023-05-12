@@ -10,7 +10,7 @@ TARGET = gd32f470zgt6
 # debug build?
 DEBUG = 1
 # optimization for size
-OPT = -Os
+OPT = -O0
 
 
 #######################################
@@ -66,6 +66,7 @@ ASM_SOURCES = Firmware/CMSIS/GD/GD32F4xx/Source/GCC/startup_gd32f450_470.S
 # binaries
 #######################################
 PREFIX = arm-none-eabi-
+GCC_PATH =  /home/chen/gcc-arm-none-eabi-10.3-2021.10/bin/
 # The gcc compiler bin path can be either defined in make command via GCC_PATH variable (> make GCC_PATH=xxx)
 # either it can be added to the PATH environment variable.
 ifdef GCC_PATH
